@@ -32,8 +32,8 @@ class ListBinarySearch  {
 
     public int binarySearch(ArrayList<Integer> list,int length,int value){
         int low=0;
-        int high=length+1;
-        while (low<high){
+        int high=length;
+        while (low<=high){
             int mid=(low+high)/2;
             if(value==list.get(mid))
                 return mid;
@@ -73,8 +73,8 @@ class ListBinarySearch  {
 
     public int binarySearch(ArrayList<Long> list,int length,long value){
         int low=0;
-        int high=length+1;
-        while (low<high){
+        int high=length;
+        while (low<=high){
             int mid=(low+high)/2;
             if(value==list.get(mid))
                 return mid;
