@@ -1,9 +1,5 @@
-package Java_Templates;
-import java.util.ArrayList;
-import java.util.List;
-
 public class PrimeFactSqrt {
-    public static List<Integer> primefact(int a) {
+    public List<Integer> primefact(int a) {
         List<Integer> list = new ArrayList<>();
         for (int i = 2; i <= Math.sqrt(a); i++) {
             if (a % i == 0) {

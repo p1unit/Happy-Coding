@@ -1,7 +1,3 @@
-package Dp;
-
-import java.util.Arrays;
-
 public class Longest_Increasing_Subsequence {
 
     public int lis(int []arr){

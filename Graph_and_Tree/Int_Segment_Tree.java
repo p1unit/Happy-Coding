@@ -50,7 +50,7 @@ class Int_Segment_Tree{
         else
             update(arr,2*idx+2,n,mid+1,end);
 
-        this.tree[idx]=action(this.tree[2*idx+1],this.tree[idx+2]);
+        this.tree[idx]=action(this.tree[2*idx+1],this.tree[2*idx+2]);
     }
 
 }

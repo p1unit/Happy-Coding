@@ -1,7 +1,3 @@
-package Java_Templates;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class FactorSqrt {
 	public static List<Integer> factorSqrt(int a) {
