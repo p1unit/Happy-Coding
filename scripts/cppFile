@@ -1,0 +1,40 @@
+#!/bin/bash
+
+code_init(){
+
+    FILENAME="${1}"
+    EXTENCTION=".cpp"
+
+TEMPLATE_CODE="
+// @uthor - Puneet
+#include <bits/stdc++.h>
+#define int long long
+#define pb push_back
+#define fi first
+#define se second
+#define MAX 1000003
+#define MOD 1000000007
+#define fastIO ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
+using namespace std;
+
+void solve() {
+
+    long t;
+    cin>>t;
+
+    while(t-->0) {
+
+    }
+}
+
+int32_t main(){
+
+    fastIO;
+    // solve();
+}"
+
+    echo "$TEMPLATE_CODE" > "${FILENAME}${EXTENCTION}"
+}
+
+FILE_NAME=$1
+code_init "$FILE_NAME"
