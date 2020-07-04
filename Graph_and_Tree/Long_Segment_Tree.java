@@ -1,25 +1,25 @@
 package Graph_and_Tree;
-class Int_Segment_Tree{
+class Long_Segment_Tree{
 
-    int[] tree;
-    int MAX=2000001;
+    private long[] tree;
+    private int MAX=2000001;
 
-    public Int_Segment_Tree(int MAX) {
+    public Long_Segment_Tree(int MAX) {
         this.MAX=MAX;
-        this.tree=new int[MAX];
+        this.tree=new long[MAX];
     }
 
-    private int action(int child1, int child2) {
+    private long action(long child1, long child2) {
         // ToDo :- add method function here
-        return 0;
+        return 0L;
     }
 
-    private int outOfBound() {
+    private long outOfBound() {
         // ToDo - add out of bound value here
-        return 0;
+        return 0L;
     }
 
-    public void build(int[] arr,int idx,int start,int end){
+    public void build(long[] arr,int idx,int start,int end){
         if(start==end){
             this.tree[idx]=arr[start];
             return;
@@ -30,7 +30,7 @@ class Int_Segment_Tree{
         this.tree[idx]=action(this.tree[2*idx+1],this.tree[2*idx+2]);
     }
 
-    public int query(int idx,int l,int r,int start,int end){
+    public long query(int idx,int l,int r,int start,int end){
         if(start>r || end<l)
             return outOfBound();
         if(start>=l && end<=r)
@@ -39,7 +39,7 @@ class Int_Segment_Tree{
         return action(query(2*idx+1,l,r,start,mid),query(2*idx+2,l,r,mid+1,end));
     }
 
-    public void update(int[] arr,int idx,int n,int start,int end){
+    public void update(long[] arr,int idx,int n,int start,int end){
         if(start==end){
             this.tree[idx]=arr[start];
             return;

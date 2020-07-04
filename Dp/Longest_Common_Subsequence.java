@@ -1,5 +1,3 @@
-package Dp;
-
 public class Longest_Common_Subsequence {
 
     public int lis(String A,String B){
