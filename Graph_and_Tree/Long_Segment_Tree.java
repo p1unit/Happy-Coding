@@ -1,4 +1,4 @@
-package Graph_and_Tree;
+
 class Long_Segment_Tree{
 
     private long[] tree;

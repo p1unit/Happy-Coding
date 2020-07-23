@@ -1,4 +1,4 @@
-package Graph_and_Tree;
+
 class Int_Segment_Tree{
 
     int[] tree;

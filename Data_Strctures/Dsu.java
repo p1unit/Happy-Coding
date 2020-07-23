@@ -1,5 +1,3 @@
-package Data_Strctures;
-
 class Dsu{
     private  int[] par;
     private  int[] size;
